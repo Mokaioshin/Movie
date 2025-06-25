@@ -1,0 +1,201 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+
+    background-image: url('https://static.vecteezy.com/system/resources/previews/021/583/370/non_2x/aesthetic-background-illustrations-of-clouds-stars-and-sky-with-purple-gradations-suitable-for-wallpapers-presentation-backgrounds-and-various-other-design-needs-free-vector.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 100px;
+
+    background: rgba(61, 17, 6, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+    border: 1px solid rgba(61, 17, 6, 0.3);
+}
+
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #d079e1; 
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+h2  {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+
+.searchpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.searchInput {
+    padding: 12px 20px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 300px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.searchInput:focus {
+    border-color: #d079e1; 
+
+}
+.input-part {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem auto;
+}
+
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #d079e1;
+    box-shadow: 0px 15px 20px rgba(220, 78, 184, 0.4);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+.filters-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 2rem 0;
+}
+
+
+.genreBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.genreBtn:hover {
+    background-color: #d079e1;
+    color: white;
+}
+
+
+.resultats {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+
+.movie-card {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+.movie-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.movie-card h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+
+.movie-card button {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .input-part {
+        flex-direction: column;
+    }
+
+    .searchInput {
+        width: 80%;
+    }
+
+    .resultats {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

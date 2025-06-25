@@ -1,0 +1,25 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ_Si4Dt1NUJoTJNWDWGxVzd9TdYrLKFUllQ&s");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+.hub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projets{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+}
